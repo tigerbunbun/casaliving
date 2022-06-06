@@ -189,19 +189,31 @@
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 4"></div>
 
               <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 4">
-                slide 1
+                <img src="https://www.casa.co.kr/UploadFiles/Editor/3/24/1648096228856.jpg" alt="">
+                <div>
+                  <p>sdasdfjlijlkasdjfklsdajfsakd<br>dafkladsjlfkasdklfsdajlk<br>dsafjlkfjsadklfjsadklfjsadkl<br>adsfjlkdsajflsadk.</p>
+                </div>
               </div>
 
               <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 4">
-                Slide 2
+                <img src="https://www.casa.co.kr/UploadFiles/Editor/5/27/1653616401711.jpg" alt="">
+                <div>
+                  <p>sdasdfjlijlkasdjfklsdajfsakd<br>dafkladsjlfkasdklfsdajlk<br>dsafjlkfjsadklfjsadklfjsadkl<br>adsfjlkdsajflsadk.</p>
+                </div>
               </div>
 
               <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 4">
-                Slide 3
+                <img src="https://www.casa.co.kr/UploadFiles/Editor/5/26/1653530033383.jpg" alt="">
+                <div>
+                  <p>sdasdfjlijlkasdjfklsdajfsakd<br>dafkladsjlfkasdklfsdajlk<br>dsafjlkfjsadklfjsadklfjsadkl<br>adsfjlkdsajflsadk.</p>
+                </div>
               </div>
 
               <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 4">
-                Slide 4
+                <img src="https://www.casa.co.kr/UploadFiles/Editor/2/22/1645495167333.psd" alt="">
+                <div>
+                  <p>sdasdfjlijlkasdjfklsdajfsakd<br>dafkladsjlfkasdklfsdajlk<br>dsafjlkfjsadklfjsadklfjsadkl<br>adsfjlkdsajflsadk.</p>
+                </div>
               </div>
 
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 4">Slide 1</div>
@@ -213,12 +225,33 @@
         <div class="bg-half"></div>
 
         <div class="mn-txt">
+          <small>Casa living mz</small>
           <h2>New<br>ideas<br>for<br>your<br>lifestyle</h2>
         </div>
 
-        <div class="mn-sl-num"></div>
+        <div class="mn-sns">
+          <div>
+            <a href="javascript:void(0)"><img src="images/007_insta.png" alt=""></a>
+          </div>
+          <div>
+            <a href="javascript:void(0)"><img src="images/008_twitter.png" alt=""></a>
+          </div>
+          <div>
+            <a href="javascript:void(0)"><img src="images/009_fb.png" alt=""></a>
+          </div>
+        </div>
 
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+        <div class="mn-sl-num">
+          <span>No.</span> <span class="counting">01</span>
+        </div>
+
+        <div class="mn-sl-bar"></div>
+
+        <div class="mn-sl-mg">
+          <a href="javascript:void(0)">View magazine ></a>
+        </div>
+
+        <div id="mn-pg" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
           <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
@@ -226,9 +259,10 @@
         </div>
 
         <div class="mn-navi">
-          <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="mn-wr"></div>
-
-          <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="mn-wr"></div>
+          <div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="mn-wr"></div>
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="mn-wr"></div>
+          </div>
         </div>
 
         </div>
@@ -239,17 +273,26 @@
 
 
     <script>
+
       var mnswiper = new Swiper(".mn-sl", {
         loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        allowTouchMove: false,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
       });
+
+      mnswiper.on('slideChange', function () {
+      var numb = $('.counting');
+      var numbreal = mnswiper.realIndex;
+      numb.text('0' + (numbreal + 1) );
+      });
+
     </script>
 
 
