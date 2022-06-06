@@ -741,71 +741,84 @@
         <h1>CSLV 리뷰클럽</h1>
       </div>
 
-      <div class="swiper sns-sl swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-        <div class="swiper-wrapper" id="sns-sl" aria-live="polite">
-          <div class="swiper-slide">
-            <div>
-              <img src="https://www.casa.co.kr/UploadFiles/Banner/5/16/16526666615970.jpg" alt="">
-            </div>
+      <div class="swiper sns-sl swiper-initialized swiper-horizontal swiper-pointer-events">
+
+        <div class="swiper-wrapper" id="swiper-wrapper-1338210a7271a21e2" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1381px, 0px, 0px);">
+
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="9" role="group" aria-label="10 /  10" style="width: 1351px; margin-right: 30px;">Slide 9</div>
+
+          <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide" data-swiper-slide-index="7" role="group" aria-label="8 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group" aria-label="9 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <div></div>
+
+          <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="9" role="group" aria-label="10 / 10">
+            <img src="https://www.casa.co.kr/UploadFiles/Curation/5/27/16536171186990.jpg" alt="">
           </div>
+
+          <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 10">Slide 1</div>
+
         </div>
+
+      </div>
 
     </article>
 
 
     <script>
-        var snsswiper = new Swiper(".sns-sl", {
-          loop: true,
-          loopedSlides: 6,
-          speed: 2000,
-          centeredSlides: true,
+        var swiper = new Swiper(".sns-sl", {
+          speed: 1000,
           slidesPerView: 2,
-          spaceBetween: 20,
-          autoplay: {
-            delay: 0,
-            pauseOnMouseEnter: true,
-            disableOnInteraction: false,
-          },
+          spaceBetween: 60,
+          centeredSlides: true,
           breakpoints: {
-
+            // when window width is >= 320px
             768: {
               slidesPerView: 4,
             },
-
+            // when window width is >= 480px
             1366: {
               slidesPerView: 6,
             },
-
           },
+          loop: true,
+          autoplay: {
+            delay: 1000,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          }
         });
-
     </script>
 
 
