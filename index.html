@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>CASA LIVING 까사리빙</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <style type="text/css"></style>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!--JS-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript"></script>
+
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Slick
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  -->
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <script>
+    AOS.init();
+    </script>
+
+
+    <header>
+
+      <nav>
+
+        <div class="navi" data-aos="fade-down" data-aos-duration="1000">
+          <div>
+            <a href="javascript:void(0)"><img src="https://i.imgur.com/7CnwsXK.png" alt=""></a>
+          </div>
+          <div>
+            <a href="javascript:void(0)" target="_blank" id="langicon">
+              <img src="https://www.casa.co.kr/images/common/btn_top_login.png" alt="">
+              <!--<span id="langpopup">
+                <small>KOREAN</small>
+                <small>ENGLISH</small>
+              </span>-->
+            </a>
+            <a href="javascript:void(0)" id="srchicon">
+              <img src="https://www.casa.co.kr/images/common/btn_top_search.png" alt="">
+            </a>
+            <a id="openNav" href="javascript:void(0)">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+
+        <script>//서치버튼 모양 토글
+        $("#srchicon").on("click", function(e){
+            var $this = $(this);//element a
+
+            $this.find(">img").attr("src", function(index, attr) {
+
+                if(attr.match('https://www.casa.co.kr/images/common/btn_top_search.png')){
+                    return attr.replace("btn_top_search.png", "btn_top_search_close.png");
+                } else {
+                    return attr.replace("btn_top_search_close.png", "btn_top_search.png");
+
+                }
+            });
+        });
+        </script>
+
+        <div class="sd-menu" id="sd-menu">
+          <div>
+            <div>
+              <a class="prod" href="javascript:void(0)">Product<span></span></a>
+                <ul>
+                  <li>
+                    <a class="proicon1" href="javascript:void(0)">Furniture<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">소파</a></li>
+                      <li><a href="javascript:void(0)">체어</a></li>
+                      <li><a href="javascript:void(0)">침대</a></li>
+                      <li><a href="javascript:void(0)">테이블</a></li>
+                      <li><a href="javascript:void(0)">수납</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon2" href="javascript:void(0)">Homeware<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">거울</a></li>
+                      <li><a href="javascript:void(0)">시계</a></li>
+                      <li><a href="javascript:void(0)">소품</a></li>
+                      <li><a href="javascript:void(0)">키친용품</a></li>
+                      <li><a href="javascript:void(0)">테이블웨어</a></li>
+                      <li><a href="javascript:void(0)">쿠션</a></li>
+                      <li><a href="javascript:void(0)">매트/카페트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon3" href="javascript:void(0)">Lighting<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">플로어 스탠드</a></li>
+                      <li><a href="javascript:void(0)">테이블 램프</a></li>
+                      <li><a href="javascript:void(0)">펜던트 램프</a></li>
+                      <li><a href="javascript:void(0)">월 램프</a></li>
+                      <li><a href="javascript:void(0)">수납</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon4" href="javascript:void(0)">Life<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">가드닝</a></li>
+                      <li><a href="javascript:void(0)">홈케어</a></li>
+                      <li><a href="javascript:void(0)">욕실</a></li>
+                      <li><a href="javascript:void(0)">펫</a></li>
+                      <li><a href="javascript:void(0)">ACC</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              <a href="javascript:void(0)">Brand</a>
+              <a href="javascript:void(0)">Magazine</a>
+              <a href="javascript:void(0)">Show</a>
+              <a href="javascript:void(0)">Event</a>
+            </div>
+            <div>
+              <div>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/d6gfnZG.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/o48deJP.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/LKe8Nz3.png" alt=""></a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">로그인</a>
+                <a href="javascript:void(0)">회원가입</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="srch" id="srch">
+          <div>
+            <div>
+              <input type="text" placeholder="Search">
+              <button><img src="https://www.casa.co.kr/images/common/btn_top_search.png" alt=""></button>
+            </div>
+            <div>
+              <span>인기검색어</span>
+              <a href="javascript:void(0)">#주방</a>
+              <a href="javascript:void(0)">#키친</a>
+              <a href="javascript:void(0)">#소품</a>
+              <a href="javascript:void(0)">#가구</a>
+              <a href="javascript:void(0)">#조명</a>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+    </header>
+
+
+    <div class="filter-black">
+    </div>
+
+
+    <main>
+
+      <div class="mn-sl-cv">
+
+        <div class="swiper mn-sl swiper-initialized swiper-horizontal swiper-pointer-events">
+
+          <div class="swiper-wrapper" id="mn-wr" aria-live="polite">
+
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 4"></div>
+
+              <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 4">
+                slide 1
+              </div>
+
+              <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 4">Slide 2</div>
+
+              <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 4">Slide 3</div>
+
+              <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 4">Slide 4</div>
+
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 4">Slide 1</div>
+
+          </div>
+
+        </div>
+
+        <div class="mn-top">
+
+          <div class="bg-half"></div>
+
+          <div class="mn-txt"></div>
+
+          <div class="mn-sl-num"></div>
+
+          <div class="mn-sl-navi">
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+            </div>
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="mn-wr"></div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="mn-wr"></div>
+          </div>
+
+          </div>
+
+        </div>
+
+      </div> <!--cont-->
+
+    </main>
+
+
+    <script>
+      var mnswiper = new Swiper(".mn-sl", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <article class="cc">
+      <div>
+        <video autoplay muted loop playsinline src="https://storage.coverr.co/videos/ACiy88h95spDjx53YiYaaECzee9iFR53?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjU0MzI0NjM5fQ.iHeVG5f83qxvoBWofz_D2o9ilOA_aoik26y3lVCMxqE"></video>
+      </div>
+      <div>
+        <a href="javascript:void(0)">
+          <img src="images/002-proto.png" alt="">
+        </a>
+      </div>
+      <div class="cc-txt">
+        <small>Promotion</small>
+        <h1>Furmirium</h1>
+        <p>숲의 고요함을 담는 시간, 인센스 리추얼</p>
+        <a href="javascript:void(0)">View more +</a>
+        <span>Scent of Forest</span>
+        <div class="cc-ex">
+          <h4 data-aos="fade-up" data-aos-duration="1000">FURMIRIUM 인센스 퍼포머_오리지널</h4>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">일반적인 인센스 스틱과 달리<br>아래로 흐르는 연무의 움직임을 바라다보면<br>복잡한 마음이 차분히 가라앉습니다.</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="mg">
+
+      <div class="mg-top">
+          <div>
+            <small>Magazine Now</small>
+            <h1>삶의 키워드가 된 가든<br></h1>
+            <p>이달 <까사리빙>을 통해 가든의 풍성함을 나눠보세요.</p>
+        </div>
+      </div>
+
+      <div>
+
+        <div class="swiper mn-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+          <div class="swiper-wrapper" id="swiper-wrapper-1071a54ad1e88151d" aria-live="polite">
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4">
+              <img src="https://www.casa.co.kr/UploadFiles/Editor/4/27/1651031937426.jpg">
+              <div class="swiper-btn-box"></div>
+              <p>영감의 정원</p>
+            </div>
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4">
+              <img src="https://www.casa.co.kr/UploadFiles/Editor/4/27/1651024794546.jpg">
+              <div class="swiper-btn-box"></div>
+              <p>자연에 가장 가까운 조경, 정영선</p>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="3 / 4">
+              <img src="https://www.casa.co.kr/UploadFiles/Editor/4/26/1650937431516.jpg">
+              <div class="swiper-btn-box"></div>
+              <p>가든 인 원더랜드</p>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="4 / 4">
+              <img src="https://www.casa.co.kr/UploadFiles/Editor/4/27/1651040464221.jpg">
+              <div class="swiper-btn-box"></div>
+              <p>일상으로 정원을 들이는 법</p>
+            </div>
+          </div>
+          <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-1071a54ad1e88151d" aria-disabled="false"></div>
+          <div class="swiper-button-prev" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-1071a54ad1e88151d" aria-disabled="true"></div>
+        </div>
+
+      </div>
+
+      <script>
+        var mgswiper = new Swiper(".mn-swiper", {
+          loop: true,
+          //autoplay: {
+            //delay: 5000,
+          //},
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <div>
+        <a href="javascript:void(0)">View more +</a>
+      </div>
+
+    </article>
+
+
+    <article class="ct">
+
+      <div>
+        <small>CATEGORY</small>
+        <h1>고품격 셀렉션을<br>한 자리에 모아보세요</h1>
+        <p>가구 셀렉션의 모든 것</p>
+      </div>
+
+      <div>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://www.casa.co.kr/UploadFiles/Editor/1/28/1643343101132.jpg" alt="">
+          <div>
+            <p>NEW</p>
+          </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://casa.co.kr/UploadFiles/Editor/4/26/1650937797049.jpg" alt="">
+          <div>
+            <p>BEST</p>
+          </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://www.casa.co.kr/UploadFiles/Editor/4/29/1651208082948.jpg" alt="">
+          <div>
+            <img src="https://i.imgur.com/eKofzpK.png" alt="">
+            <p>FURNITURE</p>
+          </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://www.casa.co.kr/UploadFiles/Banner/4/4/16490454421143.jpg" alt="">
+          <div>
+            <img src="https://i.imgur.com/s5xPuHW.png" alt="">
+            <p>HOMEWARE</p>
+          </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://www.casa.co.kr/UploadFiles/Editor/1/25/1643080320558.jpg" alt="">
+          <div>
+            <img src="https://i.imgur.com/lylBHyT.png" alt="">
+            <p>LIGHTING</p>
+          </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000">
+          <img src="https://www.casa.co.kr/UploadFiles/Editor/5/2/1651456473830.jpg" alt="">
+          <div>
+            <img src="https://i.imgur.com/qQKgrUA.png" alt="">
+            <p>LIFE</p>
+          </div>
+        </section>
+      </div>
+
+    </article>
+
+
+    <article class="sh">
+
+      <div>
+        <small>SHOWROOM</small>
+        <h1>라이징 디자이너 X CASA</h1>
+        <p>라이징 디자이너 제품과 직접 만나볼 수 있는 스토어</p>
+        <span>경기도 성남시 분당구 AK플라자 분당점 1층 명품관 (GATE6)</span>
+        <a href="javascript:void(0)">View more +</a>
+      </div>
+
+      <div></div>
+
+    </article>
+
+
+    <article class="ft">
+
+      <div>
+        <small>FEATURED</small>
+        <h1>이 달의 오브제</h1>
+      </div>
+
+      <div>
+        <div>
+          <img src="images/003-copper.png" alt="">
+        </div>
+        <div>
+          <h4>Artemide Eclisse</h4>
+          <p>일식과 월식의 의미를 지닌 에클리세.<br>
+램프 내부의 원형 조절판에 따라 달리하는<br>빛의 모양새가 마치 태양과 달이 겹치는<br>일식과 월식 현상을 보는 듯합니다.</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="images/004-wood.png" alt="">
+        </div>
+        <div>
+          <h4>In Between Coffee Table SK15</h4>
+          <p>앤트레디션은 디자인 유산을 소중히 여기되,<br>새로운 소재와 혁신적 제조 기법을 더해<br>한층 진화하고 성숙한 디자인을 선보입니다.</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="images/005-mir.png" alt="">
+        </div>
+        <div>
+          <h4>GUBI Round Wall Mirror</h4>
+          <p>거울은 단순히 용모를 확인하는 역할 이상으로<br>인테리어에서 중요한 부분을 차지합니다.<br>빛이 닿지 않는 곳을 비추고<br>공간을 훨씬 넓어 보이게 만들죠.</p>
+        </div>
+      </div>
+
+    </article>
+
+
+    <article class="bs">
+
+      <div>
+        <small>BEST ITEM</small>
+        <h1>스테디셀링 베스트 아이템</h1>
+      </div>
+
+      <div class="bs-sl-cover"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper bs-sl swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+          <div class="swiper-wrapper" id="bs-sl" aria-live="polite">
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/CTkKklp.jpg" alt="">
+                  <small>Blue Dot</small>
+                </div>
+                <div>
+                  <p>스태시 데스크_화이트 오크</p>
+                  <span>849,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/gSlkhsA.png" alt="">
+                  </div>
+                  <div>
+                    <p>필드 라운지 체어</p>
+                    <span>3,336,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/mMAIkOq.png" alt="">
+                  </div>
+                  <div>
+                    <p>핫 메시 오토만</p>
+                    <span>299,000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/ryOhR34.png" alt="">
+                    <small>Kabine</small>
+                </div>
+                <div>
+                  <p>까비네 101 스탠드 스토리지</p>
+                  <span>490,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/KwVSmYW.png" alt="">
+                  </div>
+                  <div>
+                    <p>까비네 102 로우 2 도어</p>
+                    <span>790,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/0Bleb4B.png" alt="">
+                  </div>
+                  <div>
+                    <p>까비네 레이어드 데스크</p>
+                    <span>990,000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="3 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/KhGZ5Bs.png" alt="">
+                  <small>Fumirium</small>
+                </div>
+                <div>
+                  <p>퍼미리움 인센스 퍼포머_오리지널</p>
+                  <span>320,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/mHFiaLJ.png" alt="">
+                  </div>
+                  <div>
+                    <p>퍼미리움 인센스 버너 토템 + 백플로우</p>
+                    <span>49,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://i.imgur.com/zjxNAys.png" alt="">
+                  </div>
+                  <div>
+                    <p>퍼미리움 백플로우 인센스</p>
+                    <span>19,800</span>
+                  </div>
+                </li>
+              </ul></div>
+            <div class="swiper-slide" role="group" aria-label="4 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/iCxALdz.png" alt="">
+                  <small>Tradition</small>
+                </div>
+                <div>
+                  <p>인비트윈 체어 SK1</p>
+                  <span>849,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/10/27/16353166677540.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>비트윈 어스 다이닝 체어</p>
+                    <span>695,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/5/28/16221896145130.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>캐치 라운지 체어 JH13_Divina</p>
+                    <span>299,000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="5 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/2daTX2m.png" alt="">
+                  <small>Montana</small>
+                </div>
+                <div>
+                  <p>팬톤 와이어 큐브</p>
+                  <span>271,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/7/1/16251186213640.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>몬타나 미니 사각거울</p>
+                    <span>222,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/6/29/16249467805330.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>몬타나 미니 1007 3서랍</p>
+                    <span>299,000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="6 / 6">
+              <div class="bs-sl-top">
+                <div>
+                  <img src="https://i.imgur.com/KbOGvod.png" alt="">
+                  <small>Ton</small>
+                </div>
+                <div>
+                  <p>톤 칠드런 + 체어</p>
+                  <span>849,000</span>
+                </div>
+              </div>
+              <ul div class="bs-sl-bot">
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/2/10/16444814623700.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>톤 체어 발렌시아</p>
+                    <span>635,000</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="https://www.casa.co.kr/UploadFiles/Production/1/26/16431785988450.png_304.png" alt="">
+                  </div>
+                  <div>
+                    <p>톤 테이블 스톡홀름 익스텐션</p>
+                    <span>2,426,000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="6 / 6">
+              <a href="">View more +</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next2" tabindex="0" role="button" aria-label="Next slide" aria-controls="bs-sl" aria-disabled="false"></div>
+        <div class="swiper-button-prev swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="bs-sl" aria-disabled="true"></div>
+      </div>
+
+      <!--
+      <div>
+        <div id="bs-pagination" class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
+          <span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.111111) scaleY(1); transition-duration: 300ms;"></span>
+        </div>
+      </div>
+    -->
+
+    </article>
+
+
+    <script>
+        var brswiper = new Swiper(".bs-sl", {
+          slidesPerView: 1.1,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2",
+          },
+          breakpoints: {
+
+            768: {
+              slidesPerView: 2.1,
+              spaceBetween: 30,
+            },
+
+            1366: {
+              slidesPerView: 3,
+              spaceBetween: 48,
+            },
+
+          },
+        });
+      </script>
+
+    <article class="sns">
+
+      <div>
+        <small>SNS</small>
+        <h1>CSLV 리뷰클럽</h1>
+      </div>
+
+      <div class="swiper sns-sl swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+        <div class="swiper-wrapper" id="sns-sl" aria-live="polite">
+          <div class="swiper-slide">
+            <div>
+              <img src="https://www.casa.co.kr/UploadFiles/Banner/5/16/16526666615970.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+          <div class="swiper-slide">
+            <div></div>
+          </div>
+        </div>
+
+    </article>
+
+
+    <script>
+        var snsswiper = new Swiper(".sns-sl", {
+          loop: true,
+          loopedSlides: 6,
+          speed: 2000,
+          centeredSlides: true,
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoplay: {
+            delay: 0,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+
+            768: {
+              slidesPerView: 4,
+            },
+
+            1366: {
+              slidesPerView: 6,
+            },
+
+          },
+        });
+
+    </script>
+
+
+    <footer>
+      <div>
+        <div>
+          <div>
+            <a href="javascript:void(0)">까사리빙 소개</a>
+            <a href="javascript:void(0)">개인정보취급방침</a>
+            <a href="javascript:void(0)">이용약관</a>
+            <a href="javascript:void(0)">인스타그램</a>
+          </div>
+          <p>㈜시공사대표자 : 윤호권, 박헌용 개인정보책임자 : 이시민 cs@casa.co.kr고객센터 1644-4676</p>
+          <p>서울특별시 성동구 성수동1가 656-1748사업자번호 : 214-81-33375 통신판매업신고 제2001-서울서초-00591호사업자정보확인</p>
+        </div>
+        <div>
+          <small>CS CENTER</small>
+          <strong>1644-4676</strong>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+
+  </html>
