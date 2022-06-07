@@ -1,3 +1,20 @@
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+		if ($(this).scrollTop() > 600) {
+			$('.as-right').addClass('as-right-on');
+		} else {
+			$('.as-right').removeClass('as-right-on');
+		}
+	});
+
+	// 2. 버튼 클릭하면 원하는 위치로 이동
+	$('.as-right').click(function (event) {
+		event.preventDefault();
+		$('html, body').animate({ scrollTop: 0 }, 300);
+	});
+
+});
 
 //내브열기
 
@@ -45,6 +62,9 @@ $(function() {
 })
 */
 
+
+
+/*
 //내비여닫기 큰거
 $(function() {
   var proicon = $('.proicon')
@@ -87,7 +107,7 @@ $(function() {
   });
 })
 
-
+*/
 
 
 

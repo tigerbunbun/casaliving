@@ -36,8 +36,9 @@ h1 {
 h2 {
   font-size: 2.8rem;
   line-height: 3.6rem;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 6px;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -273,6 +274,11 @@ header nav .navi> :last-child> :last-child :nth-child(4) {
   position: relative;
 }
 
+.sd-menu> div> :nth-child(1)> a:hover {
+  background: #222;
+  color: #fff;
+}
+
 .sd-menu> div> :nth-child(1)> ul {
   display: none;
 }
@@ -290,6 +296,7 @@ header nav .navi> :last-child> :last-child :nth-child(4) {
   position: relative;
 }
 
+/*
 .sd-menu> div> :nth-child(1)> a> span,
 .sd-menu> div> :nth-child(1)> ul> li> a span {
   display: inline-block;
@@ -303,6 +310,7 @@ header nav .navi> :last-child> :last-child :nth-child(4) {
   top: 24px;
   right: 20px;
 }
+*/
 
 .spantoggle {
   transform: scaleY(-1);
@@ -541,7 +549,7 @@ main {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  top: 46%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
@@ -551,6 +559,13 @@ main {
 .mn-txt small {
   letter-spacing: 2px;
   margin-bottom: 1rem;
+}
+
+.mn-txt p {
+  color: #fff;
+  font-size: 0.8rem;
+  display: none;
+  text-transform: none;
 }
 
 .mn-sns {
@@ -587,10 +602,48 @@ main {
 }
 
 .mn-sl-num span {
+  display: block;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.mn-sl-num p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 1.4rem;
+  color: #fff;
+}
+
+.mn-sl-num-real {
+  position: absolute;
+  font-size: 4.8rem;
   font-weight: 700;
+  color: #fff;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 10;
+}
+
+.mn-sl-num-real span {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.mn-sl-num-real-circle {
+  position: absolute;
+  display: block;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 9;
+  width: 80px;
+  height: 80px;
+  background: #FF802D;
 }
 
 .mn-sl-bar {
@@ -607,14 +660,23 @@ main {
 .mn-ex {
   display: none;
   position: absolute;
-  top: 360px;
+  bottom: 60px;
   left: 60px;
   z-index: 10;
+  text-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mn-ex span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #FF802D;
+  margin-bottom: 12px;
 }
 
 .mn-ex p {
-  font-size: 0.8rem;
-  font-weight: 100;
+  font-size: 0.9rem;
+  font-weight: 400;
   line-height: 1.4rem;
   color: #fff;
 }
@@ -644,9 +706,9 @@ main {
 }
 
 @keyframes pump {
-  0% { transform: scale(1);opacity: 0.1; }
-  50% { transform: scale(1.05); opacity: 0.3;}
-  100% { transform: scale(1);opacity: 0.1; }
+  0% { transform: scale(1);opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.7;}
+  100% { transform: scale(1);opacity: 1; }
 }
 
 .mn-go div {
@@ -678,8 +740,8 @@ main {
   width: 60px;
   height: 60px;
   border-radius: 60px;
-  background: #fff;
-  opacity: 0.1;
+  background: #FF802D;
+  opacity: 1;
 }
 
 #mn-pg {
@@ -1328,6 +1390,11 @@ main {
   border-radius: 10px;
 }
 
+.bs-sl .swiper-wrapper> :last-child {
+  display: block;
+  width: 100%;
+}
+
 .bs-sl-top {
   margin-bottom: 30px;
   padding-bottom: 8px;
@@ -1502,7 +1569,7 @@ main {
 }
 
 .sns-sl :nth-child(2n)>img {
-  transform: scale(0.9);
+  transform: scale(0.85);
 }
 
 .sns-sl .swiper-slide> img:hover {
@@ -1542,7 +1609,36 @@ footer> div :nth-child(2) strong {
   font-size: 1.4rem;
 }
 
-/**/
+.as-right {
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  opacity: 0;
+  z-index: 10;
+  transition: .3s;
+}
+
+.as-right-on {
+  right: 5%;
+  opacity: 1;
+}
+
+.as-right button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  border-radius: 50px;
+  background: #444;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+/*laptop start*/
+
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -1568,11 +1664,15 @@ footer> div :nth-child(2) strong {
       */
 
       h2 {
-       font-size: 5.2rem;
-       line-height: 5.8rem;
+       font-size: 3.8rem;
+       line-height: 4.8rem;
        font-weight: 700;
-       letter-spacing: -2px;
+       letter-spacing: 14px;
      }
+
+      .mn-txt p {
+        display: block;
+      }
 
       .mn-sns {
         top: 60px;
@@ -1587,6 +1687,16 @@ footer> div :nth-child(2) strong {
       .mn-sl-num {
         top: 60px;
         left: 60px;
+      }
+
+      .mn-sl-num-real {
+        font-size: 5.8rem;
+        font-weight: 700;
+        top: 120px;
+      }
+
+      .mn-sl-num-real-circle {
+        top: 110px;
       }
 
       .mn-sl-bar {
@@ -1604,7 +1714,7 @@ footer> div :nth-child(2) strong {
       }
 
       #mn-pg {
-        bottom: 125px;
+        bottom: 60px;
       }
 
       #mn-pg .swiper-pagination-bullet {
@@ -1614,7 +1724,7 @@ footer> div :nth-child(2) strong {
 
       .mn-navi {
         position: absolute;
-        bottom: 90px;
+        bottom: 25px;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 10;
