@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>CASA LIVING 까사리빙</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/join.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <style type="text/css"></style>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!--JS-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript"></script>
+
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Slick
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  -->
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <script>
+    AOS.init();
+    </script>
+
+
+    <header>
+
+      <nav>
+
+        <div class="navi" id="navi" data-aos="fade-down" data-aos-duration="1000">
+          <div>
+            <a href="javascript:void(0)"><img src="https://i.imgur.com/7CnwsXK.png" alt=""></a>
+          </div>
+          <div>
+            <a href="javascript:void(0)" target="_blank" id="langicon">
+              <img src="https://www.casa.co.kr/images/common/btn_top_login.png" alt="">
+              <!--<span id="langpopup">
+                <small>KOREAN</small>
+                <small>ENGLISH</small>
+              </span>-->
+            </a>
+            <a href="javascript:void(0)" id="srchicon">
+              <img src="https://www.casa.co.kr/images/common/btn_top_search.png" alt="">
+            </a>
+            <a id="openNav" href="javascript:void(0)">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+
+        <script>//서치버튼 모양 토글
+        $("#srchicon").on("click", function(e){
+            var $this = $(this);//element a
+
+            $this.find(">img").attr("src", function(index, attr) {
+
+                if(attr.match('https://www.casa.co.kr/images/common/btn_top_search.png')){
+                    return attr.replace("btn_top_search.png", "btn_top_search_close.png");
+                } else {
+                    return attr.replace("btn_top_search_close.png", "btn_top_search.png");
+
+                }
+            });
+        });
+        </script>
+
+        <div class="sd-menu" id="sd-menu">
+          <div>
+            <div>
+              <a class="prod" href="index.html">Home<span></span></a>
+                <ul>
+                  <li>
+                    <a class="proicon1" href="javascript:void(0)">Furniture<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">소파</a></li>
+                      <li><a href="javascript:void(0)">체어</a></li>
+                      <li><a href="javascript:void(0)">침대</a></li>
+                      <li><a href="javascript:void(0)">테이블</a></li>
+                      <li><a href="javascript:void(0)">수납</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon2" href="javascript:void(0)">Homeware<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">거울</a></li>
+                      <li><a href="javascript:void(0)">시계</a></li>
+                      <li><a href="javascript:void(0)">소품</a></li>
+                      <li><a href="javascript:void(0)">키친용품</a></li>
+                      <li><a href="javascript:void(0)">테이블웨어</a></li>
+                      <li><a href="javascript:void(0)">쿠션</a></li>
+                      <li><a href="javascript:void(0)">매트/카페트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon3" href="javascript:void(0)">Lighting<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">플로어 스탠드</a></li>
+                      <li><a href="javascript:void(0)">테이블 램프</a></li>
+                      <li><a href="javascript:void(0)">펜던트 램프</a></li>
+                      <li><a href="javascript:void(0)">월 램프</a></li>
+                      <li><a href="javascript:void(0)">수납</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="proicon4" href="javascript:void(0)">Life<span></span></a>
+                    <ul>
+                      <li><a href="javascript:void(0)">가드닝</a></li>
+                      <li><a href="javascript:void(0)">홈케어</a></li>
+                      <li><a href="javascript:void(0)">욕실</a></li>
+                      <li><a href="javascript:void(0)">펫</a></li>
+                      <li><a href="javascript:void(0)">ACC</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              <a href="join.html">Join</a>
+              <a href="login.html">Login</a>
+            </div>
+            <div>
+              <div>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/d6gfnZG.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/o48deJP.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="https://i.imgur.com/LKe8Nz3.png" alt=""></a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">로그인</a>
+                <a href="javascript:void(0)">회원가입</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="srch" id="srch">
+          <div>
+            <div>
+              <input type="text" placeholder="Search">
+              <button><img src="https://www.casa.co.kr/images/common/btn_top_search.png" alt=""></button>
+            </div>
+            <div>
+              <span>인기검색어</span>
+              <a href="javascript:void(0)">#주방</a>
+              <a href="javascript:void(0)">#키친</a>
+              <a href="javascript:void(0)">#소품</a>
+              <a href="javascript:void(0)">#가구</a>
+              <a href="javascript:void(0)">#조명</a>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+    </header>
+
+
+    <!--contstart-->
+
+
+    <div class="filter-black">
+    </div>
+
+
+    <article class="jn-hd">
+    <h1>Join Us</h1>
+  </article>
+
+
+  <article class="jn-cont">
+
+    <div class="id">
+      <p>아이디<span class="reddot">*</span></p>
+      <div>
+        <input type="text" placeholder="ex : casaliving" class="clicker">
+        <button>중복확인</button>
+      </div>
+      <div class="idsmall">
+        <small>*6자 이상, 영문 소문자와 숫자만 사용 가능</small>
+      </div>
+    </div>
+
+    <div class="pw">
+      <p>비밀번호<span class="reddot">*</span></p>
+      <div>
+        <input type="password" placeholder="비밀번호를 입력해주세요" class="clicker">
+      </div>
+      <div class="idsmall">
+        <small>*10자 이상 입력</small>
+        <small>*영문 소문자, 숫자, 특수문자 중 2개 이상 조합</small>
+        <small>*같은 숫자 3자리 이상 사용 불가능</small>
+      </div>
+    </div>
+
+    <div class="pw2">
+      <p>비밀번호 확인<span class="reddot">*</span></p>
+      <div>
+        <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" class="clicker">
+      </div>
+      <div class="idsmall">
+        <small>*위와 동일한 비밀번호를 입력해주세요.</small>
+      </div>
+    </div>
+
+    <div class="nm">
+      <p>이름<span class="reddot">*</span></p>
+      <div>
+        <input type="text" placeholder="이름을 입력해주세요">
+      </div>
+    </div>
+
+    <div class="ems">
+      <p>이메일<span class="reddot">*</span></p>
+      <div>
+        <input type="email" placeholder="이메일을 입력해주세요." class="clicker">
+      </div>
+      <div class="idsmall">
+        <small>*비밀번호 분실 시 사용됩니다.</small>
+      </div>
+    </div>
+
+    <div class="ph">
+      <p>휴대전화<span class="reddot">*</span></p>
+      <div>
+        <input type="text" placeholder="숫자만 입력해주세요">
+        <button>인증번호 받기</button>
+      </div>
+    </div>
+
+    <div class="adr">
+      <p>주소<span class="reddot">*</span></p>
+      <div>
+        <a class="adr-btn" href="javascript:void(0)">도로명, 지번, 건물명 검색
+        <img src="images/main/1-nav-02-search.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="br">
+      <p>생년월일</p>
+      <div>
+        <input maxlength="4" type="text" placeholder="YYYY">
+        <span>/</span>
+        <input maxlength="2" type="text" placeholder="MM">
+        <span>/</span>
+        <input maxlength="2" type="text" placeholder="DD">
+      </div>
+    </div>
+
+  </article>
+
+
+  <article class="ag">
+
+    <p>이용약관동의<span class="reddot">*</span></p>
+
+    <div class="all">
+      <div>
+        <label for="all"><input type="checkbox" id="all">전체 동의하기</label>
+        <span>약관보기</span>
+      </div>
+      <!--<div>
+        <a href="">약관보기</a>
+      </div>-->
+    </div>
+
+    <div class="it"></div>
+
+    <div class="btn">
+      <button>가입하기</button>
+    </div>
+
+  </article>
+
+
+  <!--contend-->
+
+
+    <footer>
+      <div>
+        <div>
+          <div>
+            <a href="javascript:void(0)">까사리빙 소개</a>
+            <a href="javascript:void(0)">개인정보취급방침</a>
+            <a href="javascript:void(0)">이용약관</a>
+            <a href="javascript:void(0)">인스타그램</a>
+          </div>
+          <p>㈜시공사대표자 : 윤호권, 박헌용 개인정보책임자 : 이시민 cs@casa.co.kr고객센터 1644-4676</p>
+          <p>서울특별시 성동구 성수동1가 656-1748사업자번호 : 214-81-33375 통신판매업신고 제2001-서울서초-00591호사업자정보확인</p>
+        </div>
+        <div>
+          <small>CS CENTER</small>
+          <strong>1644-4676</strong>
+        </div>
+      </div>
+    </footer>
+
+
+    <aside>
+      <div class="as-right">
+        <button>TOP</button>
+      </div>
+    </aside>
+
+
+  </body>
+
+
+  </html>
