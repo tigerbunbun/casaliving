@@ -134,6 +134,10 @@ header nav .navi {
   align-items: center;
 }
 
+.fffgnb {
+  background: #fff;
+}
+
 header nav .navi> :first-child> a img {
   width: 60px;
 }
@@ -528,7 +532,7 @@ main {
   right: 0;
   top: 0;
   z-index: 10;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.2);
 }
 
 .mn-txt {
@@ -1064,7 +1068,7 @@ main {
 }
 
 .ct> :nth-child(2) section:hover img {
-  filter: contrast(80%) brightness(110%);
+  filter: contrast(110%) brightness(100%);
   transform: scale(1.05);
 }
 
@@ -1318,8 +1322,16 @@ main {
   position: relative;
 }
 
+.bs-sl .swiper-slide {
+  padding: 20px;
+  background: #e6e6e6;
+  border-radius: 10px;
+}
+
 .bs-sl-top {
-  margin-bottom: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
 }
 
 .bs-sl-top:hover {
@@ -1546,12 +1558,21 @@ footer> div :nth-child(2) strong {
         line-height: 3.4rem;
       }
 
+      /*
       h2 {
         font-size: 4.6rem;
         line-height: 6rem;
         font-weight: 300;
         letter-spacing: 8px;
       }
+      */
+
+      h2 {
+       font-size: 5.2rem;
+       line-height: 5.8rem;
+       font-weight: 700;
+       letter-spacing: -2px;
+     }
 
       .mn-sns {
         top: 60px;
