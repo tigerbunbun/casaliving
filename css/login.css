@@ -821,7 +821,7 @@ footer> div :nth-child(2) strong {
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   border-radius: 50px;
   background: #444;
-  font-size: 0.7rem;
+  font-size: 0.7rem;imag
   color: #fff;
 }
 
@@ -849,6 +849,15 @@ footer> div :nth-child(2) strong {
    line-height: 4.8rem;
    font-weight: 700;
    letter-spacing: 14px;
+ }
+
+ .sd-menu {
+   width: 450px;
+   right: -450px;
+ }
+
+ .tgnav {
+   right: 0;
  }
 
   /*contstart*/

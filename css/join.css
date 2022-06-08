@@ -769,6 +769,15 @@ footer> div :nth-child(2) strong {
     line-height: 3.4rem;
   }
 
+  .sd-menu {
+    width: 450px;
+    right: -450px;
+  }
+
+  .tgnav {
+    right: 0;
+  }
+
   /*
   h2 {
     font-size: 4.6rem;

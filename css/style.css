@@ -994,7 +994,7 @@ main {
 }
 
 .mn-swiper .swiper-button-prev {
-  background: url('https://i.imgur.com/gJ1ZUxJ.png') no-repeat;
+  background: url('..images/065.png') no-repeat;
   background-size: 50% auto;
   background-position: center;
   top: auto;
@@ -1004,7 +1004,7 @@ main {
 }
 
 .mn-swiper .swiper-button-next {
-  background: url('https://i.imgur.com/saiEzLd.png') no-repeat;
+  background: url('..images/066.png') no-repeat;
   background-size: 50% auto;
   background-position: center;
   top: auto;
@@ -1231,7 +1231,7 @@ main {
   width: 95%;
   height: 400px;
   margin-left: 5%;
-  background: url('https://i.imgur.com/DD8pePr.png') no-repeat;
+  background: url('../images/067.png') no-repeat;
   background-size: cover;
   background-position: center left;
   border-radius: 10px 0 0 10px;
@@ -1332,7 +1332,7 @@ main {
   width: 50%;
   height: 300px;
   margin-left: 50%;
-  background: url('https://www.casa.co.kr/UploadFiles/Editor/5/20/1653030395712.jpg');
+  background: url('../images/068.jpg');
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -1670,6 +1670,11 @@ footer> div :nth-child(2) strong {
        letter-spacing: 14px;
      }
 
+     .sd-menu {
+       width: 450px;
+       right: -450px;
+     }
+
       .mn-txt p {
         display: block;
       }
@@ -1728,11 +1733,6 @@ footer> div :nth-child(2) strong {
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 10;
-      }
-
-      .sd-menu {
-        width: 450px;
-        right: -450px;
       }
 
       .tgnav {
